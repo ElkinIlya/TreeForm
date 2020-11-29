@@ -34,7 +34,7 @@ int main() {
 			y.pop();
 		}
 		else {
-			if (y.size() == 0 || expr[i] == '*' && y.top() == '+' || y.top() == '(') {
+			if (y.size() == 0 || expr[i] == '*' && y.top() == '+' || y.top() == '(' || expr[i] == '!') {
 				y.push(expr[i]);
 			}
 			else {
